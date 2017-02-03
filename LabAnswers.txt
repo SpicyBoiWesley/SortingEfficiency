@@ -12,34 +12,35 @@ Use the website to experiment with different sorting algorithms and to answer th
 
 0.	Ideal sorting algorithms 
 What five properties do ideal sorting algorithms have?
-a)	
+a) Stable: Equal keys aren't reordered 	
 
-b)	
+b) Operates in place, requiring O(1) extra space
 
-c)	
+c) Worst-case O(n * log(n)) key comparisons	
 
-d)	
+d) Worst-case O(n) swaps 
 
-e)	
+e) Adaptive: Speeds up to O(n) when data is nearly sorted or when there are few unique keys
+
 
 
 1.	Selection Sort
 
 a)	For which of the four situations (random, nearly sorted, reversed, few unique) is Selection Sort most efficient? Explain why.
-
-
+    All four situations for selection sort had the same efficiency. These four situations spent the same amount of time completing the sort. In each situation, they spend the same amount of time looping through each character making comparisons
 
 b)	How does changing the problem size affect each of the four situations? 
-
+   Changing the problem size does not affect them.
 
 
 c)	How does the Selection Sort algorithm work? Explain.
-
+ 
+ The selection sort starts at one end with an index of 0 makes a comparison with each character to the other end of the list. After finding the desired value, it brings it to the front of the list.
 
 
 d)	What do you see in the animation that helps you identify that the animation is showing Selection Sort?
 
-
+  the pointer goes down the entire list, indicating that it's making comparison with each character. 
 
 e)	How much extra space is needed for the Selection Sort algorithm? Is this efficient use of space?
 
@@ -47,7 +48,7 @@ e)	How much extra space is needed for the Selection Sort algorithm? Is this effi
 
 f)	How much time does Selection Sort take? Use Big O notation.
 
-
+  O(n)
 
 g)	What are the advantages of Selection Sort?
 
