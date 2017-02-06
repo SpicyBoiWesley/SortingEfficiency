@@ -30,7 +30,7 @@ a)	For which of the four situations (random, nearly sorted, reversed, few unique
     All four situations for selection sort had the same efficiency. These four situations spent the same amount of time completing the sort. In each situation, they spend the same amount of time looping through each character making comparisons
 
 b)	How does changing the problem size affect each of the four situations? 
-   Changing the problem size does not affect them.
+   Even if we increase the problem size for all of the situations, each situation will still take the same amount of time.
 
 
 c)	How does the Selection Sort algorithm work? Explain.
@@ -44,71 +44,72 @@ d)	What do you see in the animation that helps you identify that the animation i
 
 e)	How much extra space is needed for the Selection Sort algorithm? Is this efficient use of space?
 
-
+    O(1) extra space is needed for the Selecton
 
 f)	How much time does Selection Sort take? Use Big O notation.
 
-  O(n)
+  Selection Sort takes O(n^2) time. 
 
 g)	What are the advantages of Selection Sort?
-
+    A situation that is not closely sorted at all will take the same amount of time as a situation that is almost sorted. 
 
 
 h)	What are the disadvantages of Selection Sort?
-
+    Since selection sort will take up a lot of time by looping through each character, selection sort isn't the ideal sort to use    when you are in a situation with a nearly sorted list. 
 
 
 2.	Insertion Sort
 
 a)	For which of the four situations is Insertion Sort most efficient? Explain why.
 
-
+   Insertion sort is the most efficient for a nearly sorted algorithm. In a nearly sorted situation, the algroithm will make fewer comparisons since it immediately checks the next index if it's higher than the current index.
 
 b)	For which of the four situations is Insertion Sort least efficient? Explain why.
 
-
+Insertion sort is the least efficient for a reversed situation because insertion sort will have to make comparisons with each previous index. In a reversed situation, the smallest numbers at the end of the list will have to keep on comparing with the bigger numbers in the beginning until finally being placed at the beginning of the list.   
 
 c)	How does changing the problem size affect each of the four situations?
 
-
+Increasing the problem size will increase the amount of time it takes to sort for all of them.
 
 d)	How does the Insertion Sort algorithm work? Explain.
-
+    Insertion sort takes an index and compares it with the previous index. If the value is in the right spot, it inserts in after the specified index.  
 
 
 e)	What do you see in the animation that helps you identify that the animation is showing Insertion Sort?
 
-
+    The pointer takes an index and compares it with all previous indexes. It is easy to see this because each time the pointer moves down an index, it is followed by a series of comparisons with previous indexes as the pointer moves upwards. 
 
 f)	How much extra space is needed for the Insertion Sort algorithm? Is this efficient use of space?
-
+     
+     Insertion Sort requires O(1) extra space. 
 
 
 g)	How much time does Insertion Sort take? Use Big O notation.
 
-
+    Insertion sort takes O(n^2) extra time.
 
 h)	What are the advantages of Insertion Sort?
 
-
+    Insertion sort is stable and is idealy used for shorter problem sizes or nearly sorted data.
 
 i)	What are the disadvantages of Insertion Sort?
 
-
+  For data that is not even close to being sorted, Insertion sort can take a long time.
 
 3.	Merge Sort
 
 a)	For which of the four situations is Merge Sort most efficient? Explain why.
 
-
+    Each of the situations are equally efficient. It takes the same amount of time to split each situation into parts, and the merging process makes the same amount of comparisons for each situation.
 
 b)	How does changing the problem size affect each of the four situations?
 
-
+changing the problem size for each of the four situations will not have an effect. 
 
 c)	How does the Merge Sort algorithm work? Explain.
 
-
+The merge sort algorithm splits repeatedly splits the data in half and does recursive sorts by merging sorted sub-arrays using temporary arrays.
 
 d)	What do you see in the animation that helps you identify that the animation is showing Merge Sort?
 
