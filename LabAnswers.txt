@@ -51,7 +51,7 @@ f)	How much time does Selection Sort take? Use Big O notation.
   Selection Sort takes O(n^2) time. 
 
 g)	What are the advantages of Selection Sort?
-    A situation that is not closely sorted at all will take the same amount of time as a situation that is almost sorted. 
+    Selection sort is usefull when there is limited space because this sort does not require that many extra space
 
 
 h)	What are the disadvantages of Selection Sort?
