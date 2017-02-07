@@ -113,61 +113,61 @@ The merge sort algorithm splits repeatedly splits the data in half and does recu
 
 d)	What do you see in the animation that helps you identify that the animation is showing Merge Sort?
 
-
+    It is easy to see how the splitting take place as the pointer seems to always be trying to find the halfway point and   immeidately moving back up to the top.    
 
 e)	How much extra space is needed for the Merge Sort algorithm (using arrays)? Is this efficient use of space?
 
-
+This algorithm needs O(n) extra space. This isn't efficient because the bigger the problem size, the more space it will need to use. 
 
 f)	How much time does Merge Sort take? Use Big O notation.
 
-
+The merge sort takes up O(n * lg(n)) amount of time.
 
 g)	What are the advantages of Merge Sort?
-
-
-
+    
+    Merge sort is very predictable. It is simple to implement and is the only stable sorting algorithm.
+    
 h)	What are the disadvantages of Merge Sort?
 
-
+    Merge sort is expensive and complex.
 
 4.	Sorting Algorithm Comparisons
 
 a)	For the random situations, which of the three algorithms (selection, insertion, or merge sort) is the fastest? Why? 
 
-
+    Overall, merge sort seems to be the fastest because splitting data first, followed by sorting takes up a shorter amount     of time than having to make a whole ton of comparisons with the rest of the data.   
 
 b)	For the random situations, is selection sort slower or is insertion sort slower? Is it significantly slower or only a few lines slower?
 
-
+    selection sort is significantly slower.
 
 c)	For the nearly sorted situations, which of the three algorithms is the fastest? Why? 
 
-
+    Insertion sort is the fastest because of the fact that it barely has to make any comparison's at all since the list is mostly sorted. The algorithm would make few comparisons before moving on to the next index. 
 
 d)	For the nearly sorted situations, how does selection sort do compared with the other sorting algorithms? 
 
-
+    Selection sort is a turtle.
 
 e)	For the reversed situations, is selection sort slower or is insertion sort slower? Is it significantly slower or only a few lines slower?
 
-
+    Selection sort is always slower. It is a fricken turtle. It is significantly slower.
 
 f)	Does having only a few unique keys speed up any of the three algorithms? Is so, how much faster is it?
 
-
+    Having a few unique keys doesn't speed up any of the three algorithms by a whole lot. In fact, selection and merge sort still  take the same amount of time. 
 
 g)	In what case(s) would you use Selection Sort over the other two sorting algorithms?
 
-
+    Selection sort should never be used.
 
 h)	In what case(s) would you use Insertion Sort over the other two sorting algorithms?
 
-
+You would use insertion sort when data is already nearly sorted or for smaller problem sizes 
 
 i)	In what case(s) would you use Merge Sort over the other two sorting algorithms?
 
-
+We would use merge sort if space isn't a problem for us.
 
 Challenge Questions:
 
